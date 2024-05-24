@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/submit/submit"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "小程序云开发",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "black",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "/images/tab/a.png",
+        "iconPath": "/images/tab/a1.png",
+        "pagePath": "pages/index/index",
+        "text": "信息公告列表"
+      },
+      {
+        "selectedIconPath": "/images/tab/b.png",
+        "iconPath": "/images/tab/b1.png",
+        "pagePath": "pages/submit/submit",
+        "text": "发布信息公告"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

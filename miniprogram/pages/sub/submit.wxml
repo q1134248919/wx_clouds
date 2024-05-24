@@ -1,0 +1,29 @@
+<view class='container'>
+  <view class="page-uploader">
+  <image class='uploader__img' wx:if="{{hasimg}}" src='{{ image }}' mode='aspectFit'></image>
+    <view class="weui-uploader__input-box" wx:if="{{!hasimg}}">
+      <view class="weui-uploader__input" bindtap="chooseImage"></view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">标题</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" bindinput="handleTxtTitle"  placeholder="请输入标题" value='{{title}}' />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">描述</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea" bindinput="handleTxtRemarks" placeholder="请输入文本" value='{{info}}' style="height: 2em" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-area">
+    <button class="btn" type="primary" bindtap="handleOk">确定</button>
+  </view>
+</view>

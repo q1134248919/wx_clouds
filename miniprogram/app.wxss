@@ -1,0 +1,16 @@
+/**app.wxss**/
+/* .container {
+}  */
+
+button {
+  background: initial;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+

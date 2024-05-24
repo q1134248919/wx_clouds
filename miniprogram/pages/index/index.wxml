@@ -1,0 +1,17 @@
+<view class='container' style='padding-top: 0;'>
+  <scroll-view class='list' scroll-y='true' style="height: 100%">
+    <block wx:for="{{messagelist}}" wx:key="index">
+      <view class='list-item'>
+        <view class="list__content__primary">
+          <view class="item__image">
+            <image mode="aspectFill" src="{{item.image}}"></image>
+          </view>
+          <view class="item__desc">
+            <text class="item__title">{{item.title}}</text>
+            <text class="item__property">{{item.info}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

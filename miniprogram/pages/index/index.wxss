@@ -1,0 +1,77 @@
+page {
+    position: relative;
+}
+.container {
+    width: 750rpx;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+/* 新闻列表样式 */
+.list {
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+}
+.list-item{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+.list__content__primary {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding-left: 50rpx;
+    padding-top: 40rpx;
+    position: relative;
+    width: 100%;
+}
+.item__image {
+    position: relative;
+    width: 150rpx;
+    height: 150rpx;
+    margin: 0 0 40rpx 0;
+    border-radius: 50%;
+}
+.item__image image {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    border: 1rpx solid #f0f0f0;
+}
+.item__desc {
+    margin-left: 30rpx;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50rpx;
+    position: relative;
+}
+.item__title {
+    display: block;
+    width: 440rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 30rpx;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 700;
+}
+.item__property {
+    width: 100%;
+    min-height: 33rpx;
+    line-height: 33rpx;
+    font-size: 28rpx;
+    color: rgb(128, 126, 126);
+    letter-spacing: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
